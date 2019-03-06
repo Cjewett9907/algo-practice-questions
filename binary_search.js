@@ -16,6 +16,11 @@ const bSearch = function (array, target){
     } else if (array[midIdx] > target) {
         bSearch(array.slice(0, midIdx))
     }
-    
-
 }
+
+//  If given a set of standard input it is possible develop a targeted method
+// i.e. If a person is asked to find a 'X' word in the dictionary 
+// he doesn't split the dictionary 50-50 in a standard binary search pattern
+// he splits it 90-10 then 50-50 etc...
+
+// interesting concept worth investigating...
