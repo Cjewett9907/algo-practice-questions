@@ -2,7 +2,7 @@
 
 const bfs = function (root) {
     q = [root]
-    
+
     while (q.length > 0){
         let size = queue.length
 
@@ -22,3 +22,19 @@ const bfs = function (root) {
 
 }
 
+
+// dfs
+
+const dfs = function (root) {
+
+    if (root.left){
+        dfs(root.left)
+    }
+
+    if (root.right){
+        dfs(root.right)
+    }
+
+    console.log("passed the recursive calls")
+
+}
