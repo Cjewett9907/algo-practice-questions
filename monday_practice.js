@@ -133,3 +133,22 @@ const deepestLeftestBFS = function (root) {
         }
     }
 }
+
+
+const kthNode = function(root, k){
+    let n = 0
+    let counter = {}
+
+    if (root === null){
+        return
+    }
+
+    while (root.next !== null) {
+        
+        counter[n] = root
+        root = root.next
+        n += 1
+    }
+
+    return counter[n-k]
+}
