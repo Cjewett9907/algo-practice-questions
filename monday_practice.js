@@ -63,3 +63,31 @@ const bfs = function (root) {
         }
     }
 }
+
+
+const bstToLLHelper = function(root){
+    let newLL = []
+    bstToLL(root, newLL)
+
+    for(let i = 0; i < newLL.length; i++){
+        if(newLL[i+1]){
+            newLL[i].next = newLL[i + 1]
+        } else {
+            newLL[i].next = null
+        } 
+    }
+}
+
+const bstToLL = function (root, newLL) {
+
+
+    newLL.push(root)
+
+    if (root.left){
+        bstToLL(root.left, newLL)
+    }
+    if (root.right){
+        bstToLL(root.right, newLL)
+    }
+    console.log("passed the recursive calls")
+}
