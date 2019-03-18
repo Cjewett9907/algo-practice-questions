@@ -32,7 +32,7 @@ const dfs = function (root) {
 
 // bfs zigzag
 
-const bfs = function (root) {
+const bfsZigZag = function (root) {
     let q = [root]
     let direction = 1
 
@@ -90,4 +90,46 @@ const bstToLL = function (root, newLL) {
         bstToLL(root.right, newLL)
     }
     console.log("passed the recursive calls")
+}
+
+
+const deepestLeftest = function (root) {
+    if (root.left){
+        deepestLeftest(root.left)
+    }
+    if (root.right){
+        deepestLeftest(root.right)
+    }
+    return root
+    // console.log("passed the recursive calls")
+}
+
+const deepestLeftestBFS = function (root) {
+    let q = [root]
+
+    while (q.length > 0){
+        let size = queue.length
+        for (let i = 0; i < size; i++){
+           
+            if (q[i].right){
+                q.push(q[i].right)
+            }
+
+            if(q[i].left){
+                q.push(q[i].left)
+            }
+
+
+            
+        }
+        if (q.length === size){
+            return q[0]
+        }
+
+        q.unshift(size)
+
+        if(q.length === 1 && !q.left && !q.right){
+            return q[0]
+        }
+    }
 }
