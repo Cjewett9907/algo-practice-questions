@@ -1,7 +1,7 @@
 // bfs
 
 const bfs = function (root) {
-    q = [root]
+    let q = [root]
 
     while (q.length > 0){
         let size = queue.length
@@ -27,4 +27,39 @@ const dfs = function (root) {
         dfs(root.right)
     }
     console.log("passed the recursive calls")
+}
+
+
+// bfs zigzag
+
+const bfs = function (root) {
+    let q = [root]
+    let direction = 1
+
+    while (q.length > 0){
+        let size = queue.length
+        direction *= -1
+        for (let i = 0; i < size; i++){
+
+
+            if (direction === 1) {
+                if(q[i].left){
+                    q.push(q[i].left)
+                }
+                if (q[i].right){
+                    q.push(q[i].right)
+                }
+            }
+
+            if (direction === -1) {
+                if (q[i].right){
+                    q.push(q[i].right)
+                }
+                if(q[i].left){
+                    q.push(q[i].left)
+                }
+            }
+
+        }
+    }
 }
