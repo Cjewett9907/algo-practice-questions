@@ -117,10 +117,7 @@ const deepestLeftestBFS = function (root) {
 
             if(q[i].left){
                 q.push(q[i].left)
-            }
-
-
-            
+            }   
         }
         if (q.length === size){
             return q[0]
@@ -151,4 +148,23 @@ const kthNode = function(root, k){
     }
 
     return counter[n-k]
+}
+
+const evensOnly = function(root){
+
+    if (!root || !root.next){
+        return
+    }
+
+    
+    
+    while (root.next.next !== null){
+        if (root.val %2 !== 0) {
+            root = root.next
+        } else if (root.next.val % 2 !== 0){
+            root.next = root.next.next
+        }
+
+    }
+    return root
 }
