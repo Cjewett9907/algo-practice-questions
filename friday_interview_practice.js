@@ -10,3 +10,5 @@
 // [[1], [0,1], [2]] ==> false
 
 // solution: the logic follows a tree pattern
+
+// 1. go to the intial provided root and check the .children of the provided root
