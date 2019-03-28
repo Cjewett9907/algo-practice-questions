@@ -12,4 +12,5 @@
 // solution: the logic follows a tree pattern
 
 // 1. go to the intial provided root and check the .children of the provided root
-// 2. add those children that are not already included in a hasSeen hash.
+// 2. add those children into the queue that are not already included in a hasSeen hash.
+// 3. once all the children have been added and popped from the queue, check the length of the hasSeen hash.
