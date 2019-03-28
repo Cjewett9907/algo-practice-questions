@@ -8,3 +8,5 @@
 
 // example [[1], [0,1,2], [2]] ==> true
 // [[1], [0,1], [2]] ==> false
+
+// solution: the logic follows a tree pattern
