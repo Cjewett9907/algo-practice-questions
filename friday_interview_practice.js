@@ -12,3 +12,4 @@
 // solution: the logic follows a tree pattern
 
 // 1. go to the intial provided root and check the .children of the provided root
+// 2. add those children that are not already included in a hasSeen hash.
