@@ -14,3 +14,4 @@
 // 1. go to the intial provided root and check the .children of the provided root
 // 2. add those children into the queue that are not already included in a hasSeen hash.
 // 3. once all the children have been added and popped from the queue, check the length of the hasSeen hash.
+// 4. If the length of the hasSeen hash === the number of rooms provided then return true (all the rooms can be accessed, else return false)
