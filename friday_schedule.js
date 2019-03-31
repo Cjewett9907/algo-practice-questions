@@ -13,3 +13,4 @@
 
 // next week study 5 bst, 5 linked list, 5 random,5 dynamic programing
 
+// update resume with bullet points
