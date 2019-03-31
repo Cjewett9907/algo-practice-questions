@@ -10,3 +10,6 @@
     // day.schedule === hash map of todo/time consumption key value pairs
 
 //}
+
+// next week study 5 bst, 5 linked list, 5 random,5 dynamic programing
+
