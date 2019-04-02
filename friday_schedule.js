@@ -40,3 +40,5 @@
 
 // recursively cut the string until its length is 1
 
+// get the remaining characters of the string
+// determine all the inner permutations
