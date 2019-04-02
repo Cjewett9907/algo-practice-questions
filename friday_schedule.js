@@ -37,3 +37,6 @@
 //     }
 //     return results;
 //   }
+
+// recursively cut the string until its length is 1
+
