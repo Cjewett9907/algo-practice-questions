@@ -42,3 +42,8 @@
 
 // get the remaining characters of the string
 // determine all the inner permutations
+
+// add the first character + each inner permutation from the recursive call
+// return results
+
+
