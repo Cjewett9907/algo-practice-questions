@@ -21,7 +21,7 @@ const isIdentical = function(rootX, rootY){
         isIdentical(rootX.left, rootY.left)
     }
 
-    
+
     if (rootX.right === null && !rootY.right === null ){
         return false
     } else if (!rootX.right === null && rootY.right === null ){
@@ -34,4 +34,28 @@ const isIdentical = function(rootX, rootY){
         isIdentical(rootX.right, rootY.right)
     }
 
+}
+
+const BTheight = function (root){
+
+    let q = [root]
+    let count = 0
+
+    while (q.length > 0){
+
+    let size = q.length
+    for(let i = 0; i < size; i++){
+        if (q[i].left){
+            q.push(q[i].left)
+        }
+
+        if (q[i].right){
+            q.push(q[i].right)
+        }
+
+     }
+     count += 1
+    }
+
+    return count
 }
