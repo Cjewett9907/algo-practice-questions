@@ -59,3 +59,19 @@ const BTheight = function (root){
 
     return count
 }
+
+
+const delBT = function (root){
+
+    if (root === null){
+        return
+    } 
+
+    delBT(root.left)
+    delBT(root.right)
+
+    delete(root)
+
+    root = null
+    
+}
