@@ -75,3 +75,7 @@
 // 		}
 // 	}
 // }
+
+// keys room relationship follows the decision tree pattern
+
+// this pattern should be recognized in future has many to many relationships
