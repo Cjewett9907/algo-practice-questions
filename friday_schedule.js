@@ -47,3 +47,7 @@
 // return results
 
 
+
+// update new friday schedule before monday
+
+
