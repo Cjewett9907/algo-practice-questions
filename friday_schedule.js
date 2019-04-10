@@ -54,3 +54,5 @@
 //  plan italy trip with wife
 
 // remember to bring clippers, cash, extra bags
+
+// travel book, code practice problems, and positive outlook
